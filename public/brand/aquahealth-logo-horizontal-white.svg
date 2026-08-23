@@ -1,0 +1,18 @@
+<svg width="720" height="160" viewBox="0 0 720 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AquaHealth logo white</title>
+  <desc id="desc">White AquaHealth wordmark with a water drop, monitoring wave, and health pulse symbol.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="31" y1="18" x2="129" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BAE6FD"/>
+      <stop offset="0.55" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="112" height="112" rx="30" fill="white" fill-opacity="0.14"/>
+  <path d="M80 39C94.9 53.2 112 74.1 112 97.2C112 115 99.4 130 80 130C60.6 130 48 115 48 97.2C48 74.1 65.1 53.2 80 39Z" fill="url(#markGradient)"/>
+  <path d="M80 56C90.1 66.3 100.3 80.6 100.3 95.5C100.3 107.9 92.3 117.8 80 117.8C67.7 117.8 59.7 107.9 59.7 95.5C59.7 80.6 69.9 66.3 80 56Z" fill="white" fill-opacity="0.18"/>
+  <path d="M58 98.6C65 94.5 72.9 94.6 79.5 98.8C86.2 103 94.8 103.1 102 98.6" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M69 84.5H77.5L82.6 97.1L89 73.7L94 84.5H102" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="174" y="91" fill="#FFFFFF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="55" font-weight="850" letter-spacing="-1">AquaHealth</text>
+  <text x="178" y="120" fill="#BAE6FD" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="3">AQUATIC INTELLIGENCE</text>
+</svg>

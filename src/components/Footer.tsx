@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,12 +7,17 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="h-10 w-10 rounded-full bg-brand-700 flex items-center justify-center text-white font-bold text-lg shadow-md">AQ</div>
-              <span className="text-2xl font-black text-brand-900 tracking-tight">AquaHealth&trade;</span>
+            <div className="mb-6">
+              <Image
+                src="/brand/aquahealth-logo-horizontal.svg"
+                alt="AquaHealth"
+                width={220}
+                height={49}
+                className="h-11 w-auto"
+              />
             </div>
             <p className="text-sm text-slate-500 leading-relaxed mb-6">
-              Grow more from every pen. AI aquatic intelligence for aquaculture enterprises — facility-level insight across every farm you operate.
+              Grow more from every pen. AI aquatic intelligence for aquaculture enterprises &mdash; facility-level insight across every farm you operate.
             </p>
                  </div>
           

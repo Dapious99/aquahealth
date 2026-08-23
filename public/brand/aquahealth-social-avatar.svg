@@ -1,0 +1,21 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AquaHealth social avatar</title>
+  <desc id="desc">Square AquaHealth social media avatar.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientTransform="translate(300 242) rotate(44) scale(930)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.45" stop-color="#0369A1"/>
+      <stop offset="1" stop-color="#0C4A6E"/>
+    </radialGradient>
+    <linearGradient id="dropGradient" x1="216" y1="110" x2="808" y2="904" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BAE6FD"/>
+      <stop offset="0.48" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bgGlow)"/>
+  <path d="M512 163C623.4 269.5 752 426.1 752 599C752 732.2 657.7 845 512 845C366.3 845 272 732.2 272 599C272 426.1 400.6 269.5 512 163Z" fill="url(#dropGradient)"/>
+  <path d="M512 287C587.6 364.1 664.1 471.3 664.1 582.8C664.1 675.7 604.1 749.8 512 749.8C419.9 749.8 359.9 675.7 359.9 582.8C359.9 471.3 436.4 364.1 512 287Z" fill="white" fill-opacity="0.18"/>
+  <path d="M346 606.1C398.5 575.4 457.9 576.4 507.1 607.6C557.3 639.4 621.9 639.8 676.3 606.1" stroke="white" stroke-width="52" stroke-linecap="round"/>
+  <path d="M428 500.6H491.6L530.1 595L577.9 420.4L615.2 500.6H676.3" stroke="white" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AquaHealth mark</title>
+  <desc id="desc">AquaHealth water drop with monitoring wave and health pulse symbol.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="92" y1="48" x2="420" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.55" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <rect x="44" y="44" width="424" height="424" rx="112" fill="#0C4A6E"/>
+  <path d="M256 95C314.5 150.9 382 233.1 382 323.8C382 393.7 332.5 453 256 453C179.5 453 130 393.7 130 323.8C130 233.1 197.5 150.9 256 95Z" fill="url(#markGradient)"/>
+  <path d="M256 162C295.7 202.5 335.9 258.8 335.9 317.4C335.9 366.2 304.4 405.1 256 405.1C207.6 405.1 176.1 366.2 176.1 317.4C176.1 258.8 216.3 202.5 256 162Z" fill="white" fill-opacity="0.18"/>
+  <path d="M169 329.6C196.6 313.5 227.7 314 253.6 330.4C280 347.1 313.9 347.3 342.5 329.6" stroke="white" stroke-width="27" stroke-linecap="round"/>
+  <path d="M212 274.2H245.4L265.6 323.8L290.7 232.1L310.3 274.2H342.5" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

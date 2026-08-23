@@ -1,13 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-lg border-b border-slate-200 transition-all duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="h-10 w-10 rounded-full bg-brand-700 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform">AQ</div>
-          <span className="text-2xl font-black text-brand-900 tracking-tight">AquaHealth&trade;</span>
+        <Link href="/" className="group" aria-label="AquaHealth home">
+          <Image
+            src="/brand/aquahealth-logo-horizontal.svg"
+            alt="AquaHealth"
+            width={240}
+            height={54}
+            priority
+            className="h-11 w-auto transition-transform group-hover:scale-105"
+          />
         </Link>
         <nav className="hidden lg:flex gap-8 items-center">
           <Link href="/" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Home</Link>
