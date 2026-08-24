@@ -47,11 +47,10 @@ export default function Footer() {
             <h4 className="font-bold text-brand-900 mb-6 uppercase tracking-wider text-sm">Get in touch</h4>
             <address className="text-sm text-slate-600 not-italic leading-relaxed">
               AquaHealth Technologies Ltd.<br/>
-              Marine Innovation Hub<br/>
-              Harborside Way<br/>
-              Seattle, WA 98101<br/><br/>
+              No 10 Onyeneke<br/>
+              Achara Layout, Enugu<br/><br/>
               <a href="mailto:hello@aquahealth.example.com" className="hover:text-brand-600 font-semibold transition-colors">hello@aquahealth.example.com</a><br/>
-              <a href="tel:+15551234567" className="hover:text-brand-600 font-semibold transition-colors">+1 (555) 123-4567</a>
+              <a href="tel:+2347026763984" className="hover:text-brand-600 font-semibold transition-colors">+234 702 676 3984</a>
             </address>
           </div>
         </div>
