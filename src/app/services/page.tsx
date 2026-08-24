@@ -36,7 +36,7 @@ export default function Services() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-row-reverse">
             <div className="order-1 lg:order-2 relative h-[450px] rounded-3xl overflow-hidden shadow-xl animate-fade-in-up">
-              <Image src="/img/expertise.jpg" alt="Cloud Analytics" fill className="object-cover" />
+              <Image src="/img/facility.jpg" alt="Cloud Analytics" fill className="object-cover" />
             </div>
             <div className="order-2 lg:order-1 animate-fade-in-up delay-100">
               <div className="h-12 w-12 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mb-6"><Activity className="h-6 w-6"/></div>

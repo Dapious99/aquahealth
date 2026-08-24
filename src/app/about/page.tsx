@@ -43,7 +43,7 @@ export default function About() {
             </p>
           </div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-xl animate-fade-in-up delay-200">
-             <Image src="/img/expertise.jpg" alt="Founder in facility" fill className="object-cover" />
+             <Image src="/img/facility.jpg" alt="Aquaculture facility" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div className="bg-white p-8 rounded-3xl animate-fade-in-up delay-100 text-slate-800 shadow-xl">
-              <div className="relative h-64 rounded-2xl overflow-hidden mb-6"><Image src="/img/tm1.jpg" alt="Onyedika Onuorah Ikechukwu" fill className="object-cover"/></div>
+              <div className="relative h-64 rounded-2xl overflow-hidden mb-6"><Image src="/img/expertise.jpg" alt="Onyedika Onuorah Ikechukwu" fill className="object-cover"/></div>
               <h3 className="text-2xl font-bold mb-2">Onyedika Onuorah Ikechukwu</h3>
               <p className="text-brand-600 font-bold text-sm mb-4">Co-Founder &amp; CEO</p>
               <p className="text-slate-600 mb-5">Visionary leader and co-founder of AquaHealth Technologies, driving the mission to transform commercial aquaculture through intelligent, data-driven solutions.</p>

@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             <div className="absolute -bottom-10 -left-10 bg-white p-4 rounded-3xl shadow-xl w-64 md:w-80 animate-fade-in-up delay-400">
               <div className="relative h-40 w-full rounded-2xl overflow-hidden group cursor-pointer">
-                <Image src="/img/expertise.jpg" alt="Drone over offshore pens" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                <Image src="/img/facility.jpg" alt="Drone over offshore pens" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                   <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center text-brand-900 shadow-lg group-hover:scale-110 transition-transform">
                     <Play className="h-5 w-5 ml-1" />
@@ -54,7 +54,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="relative h-[500px] lg:h-[700px] w-full rounded-3xl overflow-hidden shadow-xl animate-fade-in-up delay-200">
-            <Image src="/img/expertise.jpg" alt="AI engineer examining water quality data" fill className="object-cover" />
+            <Image src="/img/facility.jpg" alt="AI engineer examining water quality data" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             <Link href="/services" className="md:col-span-2 relative h-[400px] rounded-3xl overflow-hidden group shadow-lg block animate-fade-in-up delay-100">
-              <Image src="/img/expertise.jpg" alt="Computer Vision Models" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image src="/img/aquatic.jpg" alt="Computer Vision Models" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent flex flex-col justify-end p-10">
                 <h3 className="text-3xl font-bold text-white mb-3">Behavioral & Lesion Analytics</h3>
                 <p className="text-brand-50 mb-6 max-w-2xl text-lg">Our proprietary neural networks track fish velocity, schooling density, and surface lesions to flag pathogenic stress.</p>
@@ -88,7 +88,7 @@ export default function Home() {
             </Link>
             
             <Link href="/services" className="relative h-[400px] rounded-3xl overflow-hidden group shadow-lg block animate-fade-in-up delay-300">
-              <Image src="/img/expertise.jpg" alt="Cloud Dashboard" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <Image src="/img/facility.jpg" alt="Cloud Dashboard" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent flex flex-col justify-end p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">Portfolio Command Center</h3>
                 <p className="text-brand-50 mb-6">Aggregate telemetry across dozens of sites to route veterinary resources exactly where needed.</p>
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             <div className="animate-fade-in-up delay-100">
               <div className="relative h-64 rounded-3xl overflow-hidden mb-8 shadow-md">
-                <Image src="/img/expertise.jpg" alt="Continuous Monitoring" fill className="object-cover" />
+                <Image src="/img/aquatic.jpg" alt="Continuous Monitoring" fill className="object-cover" />
               </div>
               <div className="flex gap-4">
                 <span className="text-3xl font-black text-brand-300">01</span>
@@ -136,7 +136,7 @@ export default function Home() {
             
             <div className="animate-fade-in-up delay-300">
               <div className="relative h-64 rounded-3xl overflow-hidden mb-8 shadow-md">
-                <Image src="/img/expertise.jpg" alt="Targeted Action" fill className="object-cover" />
+                <Image src="/img/facility.jpg" alt="Targeted Action" fill className="object-cover" />
               </div>
               <div className="flex gap-4">
                 <span className="text-3xl font-black text-brand-300">03</span>
@@ -190,7 +190,7 @@ export default function Home() {
       {/* Statement band (white text on dark bg) */}
       <section className="py-32 relative bg-brand-900 text-white overflow-hidden animate-fade-in-up">
         <div className="absolute inset-0">
-          <Image src="/img/expertise.jpg" alt="Aerial view of offshore pens" fill className="object-cover opacity-25 mix-blend-overlay" />
+          <Image src="/img/aquatic.jpg" alt="Aerial view of offshore pens" fill className="object-cover opacity-25 mix-blend-overlay" />
         </div>
         <div className="container mx-auto px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2">
           <div>
@@ -245,7 +245,7 @@ export default function Home() {
                 "We rely on precise feeding windows to maintain margin. The hardware integration was seamless, and the telemetry lets us optimize feed distribution tank-by-tank, drastically reducing waste."
               </blockquote>
               <div className="flex items-center gap-4 mt-auto">
-                <div className="h-14 w-14 rounded-full overflow-hidden relative"><Image src="/img/tm1.jpg" alt="Reviewer" fill className="object-cover"/></div>
+                <div className="h-14 w-14 rounded-full bg-brand-900 text-white flex items-center justify-center font-bold text-xl">AO</div>
                 <div>
                   <div className="font-bold text-brand-900">Amara Okafor</div>
                   <div className="text-sm text-slate-500">Director of Hatcheries, Delta Co-op</div>
@@ -274,11 +274,11 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 animate-fade-in-up delay-100">
               <div className="relative h-64 rounded-2xl overflow-hidden mb-6 bg-slate-200">
-                 <Image src="/img/tm1.jpg" alt="Dr. Amara Eze" fill className="object-cover"/>
+                 <Image src="/img/expertise.jpg" alt="Onyedika Onuorah Ikechukwu" fill className="object-cover"/>
               </div>
-              <h3 className="text-2xl font-bold mb-1 text-brand-900">Dr. Amara Eze</h3>
+              <h3 className="text-2xl font-bold mb-1 text-brand-900">Onyedika Onuorah Ikechukwu</h3>
               <div className="text-brand-600 font-bold text-sm mb-4">Co-founder & CEO</div>
-              <p className="text-sm text-slate-600 font-medium">Marine biology and operations background. Works directly with cooperatives and B2B facilities.</p>
+              <p className="text-sm text-slate-600 font-medium">Visionary leader driving the mission to transform commercial aquaculture through intelligent, data-driven solutions.</p>
             </div>
             
             <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 animate-fade-in-up delay-200">
@@ -303,8 +303,8 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
-              {tag: 'Computer Vision', slug: 'cv-in-murky-water', title: 'Training CNNs to track fish velocity in low-visibility marine environments.', img: '/img/expertise.jpg'},
-              {tag: 'Infrastructure', slug: 'azure-edge-deployment', title: 'Why we shifted to Azure IoT Edge for disconnected offshore pen analysis.', img: '/img/expertise.jpg'},
+              {tag: 'Computer Vision', slug: 'cv-in-murky-water', title: 'Training CNNs to track fish velocity in low-visibility marine environments.', img: '/img/aquatic.jpg'},
+              {tag: 'Infrastructure', slug: 'azure-edge-deployment', title: 'Why we shifted to Azure IoT Edge for disconnected offshore pen analysis.', img: '/img/facility.jpg'},
               {tag: 'Biology', slug: 'quantifying-sea-lice', title: 'Quantifying sea lice infestation rates using sub-surface camera arrays.', img: '/img/hero.jpg'}
             ].map((post, i) => (
               <Link href={`/blog/${post.slug}`} key={i} className={`bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group animate-fade-in-up delay-${(i+1)*100}`}>
@@ -331,7 +331,7 @@ export default function Home() {
       {/* Closing CTA */}
       <section className="py-32 relative bg-brand-900 text-center text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20 mix-blend-overlay">
-          <Image src="/img/expertise.jpg" alt="Aerial farm view" fill className="object-cover" />
+          <Image src="/img/facility.jpg" alt="Aerial farm view" fill className="object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10 flex flex-col items-center animate-fade-in-up">
           <h2 className="text-5xl lg:text-7xl font-black leading-tight max-w-4xl mb-10 text-white">Bring absolute clarity to your facility.</h2>
