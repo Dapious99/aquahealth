@@ -1,4 +1,42 @@
+'use client';
+
+import { useState, FormEvent } from 'react';
+
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/ikechukwu@aquahealth.site';
+const SUBMIT_TIMEOUT_MS = 10000;
+
+type Status = 'idle' | 'loading' | 'success' | 'error';
+
 export default function Contact() {
+  const [status, setStatus] = useState<Status>('idle');
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus('loading');
+
+    const form = e.currentTarget;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+        signal: controller.signal,
+      });
+
+      if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
+
+      setStatus('success');
+      form.reset();
+    } catch {
+      setStatus('error');
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }
+
   return (
     <div className="overflow-hidden">
       <section className="py-24 bg-slate-50 border-b border-slate-100">
@@ -9,38 +47,55 @@ export default function Contact() {
           </p>
         </div>
       </section>
-      
+
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl">
           <div className="animate-fade-in-up delay-100 bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-xl">
             <h2 className="text-3xl font-bold mb-8 text-brand-900">Request a Deployment Audit</h2>
-            <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">First Name</label>
-                  <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
+
+            {status === 'success' ? (
+              <div className="rounded-lg bg-green-50 border border-green-200 text-green-800 px-6 py-8 text-center font-semibold">
+                Thank you — your request has been sent. Our team will be in touch shortly.
+              </div>
+            ) : (
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">First Name</label>
+                    <input required name="first_name" type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">Last Name</label>
+                    <input required name="last_name" type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
+                  </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Last Name</label>
-                  <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Company / Organization</label>
+                  <input required name="company" type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
                 </div>
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Company / Organization</label>
-                <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Corporate Email</label>
-                <input type="email" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-slate-700 mb-2">Facility Details (Volume, Type)</label>
-                <textarea rows={4} className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow"></textarea>
-              </div>
-              <button type="button" className="btn-primary w-full">Submit Request</button>
-            </form>
+                <div>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Corporate Email</label>
+                  <input required name="email" type="email" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Facility Details (Volume, Type)</label>
+                  <textarea required name="message" rows={4} className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow"></textarea>
+                </div>
+
+                {status === 'error' && (
+                  <p className="text-sm font-semibold text-red-600">
+                    Something went wrong sending your request. Please try again, or email us directly at{' '}
+                    <a href="mailto:ikechukwu@aquahealth.site" className="underline">ikechukwu@aquahealth.site</a>.
+                  </p>
+                )}
+
+                <button type="submit" disabled={status === 'loading'} className="btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed">
+                  {status === 'loading' ? 'Sending...' : 'Submit Request'}
+                </button>
+              </form>
+            )}
           </div>
-          
+
           <div className="animate-fade-in-up delay-200 pt-8">
             <h2 className="text-3xl font-bold mb-10 text-brand-900">Common Questions</h2>
             <div className="space-y-8">

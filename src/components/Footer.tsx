@@ -49,7 +49,7 @@ export default function Footer() {
               AquaHealth Technologies Ltd.<br/>
               No 10 Onyeneke<br/>
               Achara Layout, Enugu<br/><br/>
-              <a href="mailto:hello@aquahealth.example.com" className="hover:text-brand-600 font-semibold transition-colors">hello@aquahealth.example.com</a><br/>
+              <a href="mailto:ikechukwu@aquahealth.site" className="hover:text-brand-600 font-semibold transition-colors">ikechukwu@aquahealth.site</a><br/>
               <a href="tel:+2347026763984" className="hover:text-brand-600 font-semibold transition-colors">+234 702 676 3984</a>
             </address>
           </div>

@@ -17,7 +17,7 @@ export default function Privacy() {
             <p>All transmitted data is encrypted in transit and at rest within SOC2 compliant Microsoft Azure databases. We do not sell your operational metrics to third parties.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-brand-900">3. Contact Us</h2>
-            <p>For data removal requests or compliance audits, contact our security team at legal@aquahealth.com.</p>
+            <p>For data removal requests or compliance audits, contact our security team at ikechukwu@aquahealth.site.</p>
           </div>
         </div>
       </section>
