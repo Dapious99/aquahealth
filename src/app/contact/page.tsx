@@ -41,9 +41,10 @@ export default function Contact() {
     <div className="overflow-hidden">
       <section className="py-24 bg-slate-50 border-b border-slate-100">
         <div className="container mx-auto px-6 lg:px-8 text-center animate-fade-in-up">
-          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">Let's audit your facilities.</h1>
+          <span className="chip mb-6">Early access &middot; limited pilot seats</span>
+          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">Book a walkthrough.</h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Speak with our engineering team to map out a pilot deployment for your commercial pens.
+            We'll show you the product live and, if you'd like, run it on a few of your own inspection photos on the call.
           </p>
         </div>
       </section>
@@ -51,7 +52,7 @@ export default function Contact() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl">
           <div className="animate-fade-in-up delay-100 bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-xl">
-            <h2 className="text-3xl font-bold mb-8 text-brand-900">Request a Deployment Audit</h2>
+            <h2 className="text-3xl font-bold mb-8 text-brand-900">Book a walkthrough</h2>
 
             {status === 'success' ? (
               <div className="rounded-lg bg-green-50 border border-green-200 text-green-800 px-6 py-8 text-center font-semibold">
@@ -78,7 +79,7 @@ export default function Contact() {
                   <input required name="email" type="email" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow" />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Facility Details (Volume, Type)</label>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Facility details (tanks/ponds, species, how inspections happen today)</label>
                   <textarea required name="message" rows={4} className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-shadow"></textarea>
                 </div>
 
@@ -90,7 +91,7 @@ export default function Contact() {
                 )}
 
                 <button type="submit" disabled={status === 'loading'} className="btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed">
-                  {status === 'loading' ? 'Sending...' : 'Submit Request'}
+                  {status === 'loading' ? 'Sending...' : 'Book a walkthrough'}
                 </button>
               </form>
             )}
@@ -100,16 +101,16 @@ export default function Contact() {
             <h2 className="text-3xl font-bold mb-10 text-brand-900">Common Questions</h2>
             <div className="space-y-8">
               <div className="p-8 bg-slate-50 rounded-2xl border border-slate-200">
-                <h4 className="font-bold text-xl mb-3 text-brand-900">How quickly can you deploy?</h4>
-                <p className="text-slate-600 leading-relaxed font-medium">For standard RAS and offshore layouts, our sensor nodes can be deployed, calibrated, and feeding data to Azure within 14 days of contract signing.</p>
+                <h4 className="font-bold text-xl mb-3 text-brand-900">Do we need special cameras or sensors?</h4>
+                <p className="text-slate-600 leading-relaxed font-medium">No. AquaHealth works with photos from any phone or existing facility camera. There's nothing to install and no site visit required to get started.</p>
               </div>
               <div className="p-8 bg-slate-50 rounded-2xl border border-slate-200">
-                <h4 className="font-bold text-xl mb-3 text-brand-900">Do you integrate with existing hardware?</h4>
-                <p className="text-slate-600 leading-relaxed font-medium">Yes, our platform is hardware-agnostic. We ingest SCADA data via standard APIs from most major aquaculture sensor manufacturers, augmenting it with our computer vision feeds.</p>
+                <h4 className="font-bold text-xl mb-3 text-brand-900">What happens after I book a walkthrough?</h4>
+                <p className="text-slate-600 leading-relaxed font-medium">We'll walk you through the product live and, if you're up for it, run a few of your own inspection photos through it on the call so you can see real findings, not a canned demo.</p>
               </div>
               <div className="p-8 bg-slate-50 rounded-2xl border border-slate-200">
-                <h4 className="font-bold text-xl mb-3 text-brand-900">Who owns the biological data?</h4>
-                <p className="text-slate-600 leading-relaxed font-medium">You do. We process telemetry to provide alerts, but your raw operational data belongs entirely to your organization, secured in SOC2 compliant databases.</p>
+                <h4 className="font-bold text-xl mb-3 text-brand-900">Who owns the photos and data?</h4>
+                <p className="text-slate-600 leading-relaxed font-medium">You do. Photos and findings are stored for your account only, and we'll always tell you plainly what we do and don't do with them.</p>
               </div>
             </div>
           </div>

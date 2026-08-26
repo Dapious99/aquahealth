@@ -19,8 +19,8 @@ export default function Header() {
         <nav className="hidden lg:flex gap-8 items-center">
           <Link href="/" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Home</Link>
           <Link href="/about" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">About</Link>
-          <Link href="/services" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Services</Link>
-          <Link href="/technology" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Technology</Link>
+          <Link href="/services" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">How it works</Link>
+          <Link href="/technology" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">The model</Link>
           <Link href="/blog" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Blog</Link>
           <div className="relative group">
             <button className="flex items-center gap-1 text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">
@@ -34,7 +34,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Link href="/contact" className="btn-primary hidden lg:inline-flex group">
-            Contact us 
+            Book a walkthrough
             <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </Link>
           <button className="lg:hidden p-2 rounded-md hover:bg-slate-100 text-slate-600"><Menu className="h-6 w-6" /></button>

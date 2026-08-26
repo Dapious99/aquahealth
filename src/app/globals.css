@@ -45,4 +45,6 @@
   
   .chip { @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-brand-100 text-brand-700 tracking-wide uppercase; }
   .chip-dark { @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-white/20 text-white tracking-wide uppercase; }
+
+  .badge-status { @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold tracking-wide uppercase bg-white border border-brand-200 text-brand-700 shadow-sm; }
 }

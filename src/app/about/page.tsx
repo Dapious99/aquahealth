@@ -6,26 +6,27 @@ export default function About() {
     <div className="overflow-hidden">
       <section className="py-32 bg-slate-50 border-b border-slate-100 relative">
         <div className="container mx-auto px-6 lg:px-8 text-center animate-fade-in-up">
-          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">Bridging Biology and Silicon.</h1>
+          <span className="chip mb-6">Early access &middot; MVP</span>
+          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">Bridging biology and vision models.</h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            AquaHealth was founded to stop the devastating financial and ecological losses caused by reactive aquaculture management.
+            AquaHealth started because visual inspection — the thing that actually catches most problems early — doesn't scale past a handful of tanks. We're building the software layer that gives it a second set of eyes.
           </p>
         </div>
       </section>
-      
-      
+
+
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl">
           <div className="animate-fade-in-up">
             <h2 className="text-3xl font-bold mb-4 text-brand-900">Our Vision</h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              To create a world where commercial aquaculture operates with zero preventable yield loss, ensuring sustainable and profitable food security for the next century.
+              A world where no commercial fish farm loses yield to a problem that was visible in a photo days before it became a crisis.
             </p>
           </div>
           <div className="animate-fade-in-up delay-100">
             <h2 className="text-3xl font-bold mb-4 text-brand-900">Our Mission</h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              To equip B2B aquaculture organizations with intelligent edge-compute hardware and predictive analytics, shifting the industry from reactive panic to proactive, data-driven management.
+              To give B2B aquaculture operators an AI copilot that reads the inspection photos they already take and turns them into early, reviewable flags — no hardware to buy or install.
             </p>
           </div>
         </div>
@@ -36,10 +37,10 @@ export default function About() {
           <div className="animate-fade-in-up delay-100">
             <h2 className="text-4xl font-bold mb-6 text-brand-900">The Core Problem</h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              In commercial aquaculture, by the time a dissolved oxygen crash or a sea lice infestation is visible to a human technician walking the pen walkway, millions of dollars in yield are already lost. Manual water sampling is slow, error-prone, and impossible to scale across hundreds of active pens.
+              In commercial aquaculture, by the time a stress event or a parasite outbreak is obvious to everyone on the team, days of preventable yield are already lost. Manual visual inspection works, but it depends entirely on a trained eye covering every tank, every day, and remembering what looked different yesterday. Past a few sites, that's not consistent — it's just hope.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed font-semibold">
-              We knew that if we could put "eyes" in every tank and connect them to enterprise-grade AI, we could shift the entire industry from reactive panic to proactive management.
+              We started AquaHealth on a simple bet: your team is already taking inspection photos. If a model can read those photos as well as a second technician, you don't need new hardware — you need a second opinion that never gets tired.
             </p>
           </div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-xl animate-fade-in-up delay-200">
@@ -60,7 +61,7 @@ export default function About() {
               <div className="relative h-64 rounded-2xl overflow-hidden mb-6"><Image src="/img/expertise.jpg" alt="Onyedika Onuorah Ikechukwu" fill className="object-cover"/></div>
               <h3 className="text-2xl font-bold mb-2">Onyedika Onuorah Ikechukwu</h3>
               <p className="text-brand-600 font-bold text-sm mb-4">Co-Founder &amp; CEO</p>
-              <p className="text-slate-600 mb-5">Visionary leader and co-founder of AquaHealth Technologies, driving the mission to transform commercial aquaculture through intelligent, data-driven solutions.</p>
+              <p className="text-slate-600 mb-5">Co-founder of AquaHealth. Leads product and spends most weeks talking directly to the early pilot operators using the tool.</p>
               <div className="flex items-center gap-4">
                 <Link
                   href="https://www.linkedin.com/in/onyedika-onuorah-26b46a384"
@@ -100,9 +101,9 @@ export default function About() {
             
             <div className="bg-white p-8 rounded-3xl animate-fade-in-up delay-200 text-slate-800 shadow-xl">
               <div className="relative h-64 rounded-2xl overflow-hidden mb-6"><Image src="/img/tm1.jpg" alt="Chidi Nze" fill className="object-cover"/></div>
-              <h3 className="text-2xl font-bold mb-2">Chidi Nze</h3>
+              <h3 className="text-2xl font-bold mb-2">Peace Oyaleke</h3>
               <p className="text-brand-600 font-bold text-sm mb-4">Co-Founder & CTO, ML Architect</p>
-              <p className="text-slate-600">Former Staff Engineer at Microsoft Azure. Chidi architected the computer vision pipeline that powers our real-time edge processing and Azure telemetry integrations.</p>
+              <p className="text-slate-600">Peace builds and trains the computer vision models behind every flagged photo, and the pipeline that turns an upload into a reviewable finding.</p>
             </div>
           </div>
         </div>
