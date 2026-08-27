@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Camera, ScanLine, ClipboardCheck, ShieldCheck, Smartphone, Users } from 'lucide-react';
+import { ArrowRight, Camera, ScanLine, ClipboardCheck, ShieldCheck, Smartphone, Users, Fish, Waves, Warehouse, Building2 } from 'lucide-react';
 import SampleAnalysis from '@/components/SampleAnalysis';
 
 export default function Home() {
@@ -11,15 +11,15 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="z-10 animate-fade-in-up">
             <span className="badge-status mb-6">
-              <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse" /> Early access &middot; MVP
+              <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse" /> Aquaculture health software &middot; Early access
             </span>
             <h1 className="text-5xl lg:text-6xl font-black leading-[1.1] mb-6 text-brand-900 tracking-tight">
-              Point a phone at the tank. Get a second opinion in minutes.
+              AI health monitoring for fish farms, hatcheries &amp; shrimp ponds.
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed font-medium">
-              AquaHealth reads the inspection photos your team already takes and flags early signs of stress, lesions, and abnormal behavior — so nothing important waits for the next full walkthrough.
+              AquaHealth is B2B SaaS for commercial aquaculture operators, starting with fish and shrimp farms in Nigeria. Upload the inspection photos your team already takes — from tanks, ponds, cages, or raceways — and our vision model flags early signs of disease, stress, and abnormal behavior before they show up in your mortality numbers.
             </p>
-            <p className="text-sm font-bold text-brand-700 mb-8 uppercase tracking-wide">No cameras to install. No sensors to wire up. Works with the phone in your pocket.</p>
+            <p className="text-sm font-bold text-brand-700 mb-8 uppercase tracking-wide">No cameras to install. No sensors to wire up. One subscription covers every site you run.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary group">
                 Book a walkthrough
@@ -60,16 +60,50 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in-up">
             <span className="chip mb-6">The problem</span>
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-brand-900">Visual inspection doesn't scale past a handful of tanks.</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-brand-900">Visual inspection doesn't scale past a handful of sites.</h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Most disease and stress indicators show up visually first — before water chemistry moves, before mortality spikes. The catch is that spotting them depends on a trained eye walking every pen, every day, and remembering what changed since yesterday.
+              Most disease and stress indicators show up visually first — before water chemistry moves, before mortality spikes. The catch is that spotting them depends on a trained eye walking every tank, pond, or cage, every day, and remembering what changed since yesterday.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed font-semibold">
-              Once an operation grows past a couple of sites, that just isn't consistent. Photos already get taken on rounds — we built AquaHealth to make sure they get a second, tireless set of eyes.
+              Once a fish or shrimp operation grows past a couple of sites, that just isn't consistent. Photos already get taken on rounds — we built AquaHealth, a B2B SaaS platform, to make sure they get a second, tireless set of eyes.
             </p>
           </div>
           <div className="relative h-[420px] lg:h-[520px] w-full rounded-3xl overflow-hidden shadow-xl animate-fade-in-up delay-200">
             <Image src="/img/facility.jpg" alt="Operator on a walkthrough at a fish farm" fill className="object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Who it's for */}
+      <section id="industries" className="py-24 bg-slate-50 border-b border-slate-200 scroll-mt-20">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="mb-14 animate-fade-in-up">
+            <span className="chip mb-6">Built for aquaculture</span>
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight max-w-3xl mb-6 text-brand-900">One platform for every kind of fishery operation.</h2>
+            <p className="text-lg text-slate-600 max-w-2xl">AquaHealth is purpose-built for commercial aquaculture — not general animal health or consumer wellness. If your team walks tanks, ponds, cages, or raceways for a living, this is for you.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm animate-fade-in-up delay-100">
+              <Fish className="h-8 w-8 text-brand-600 mb-4" />
+              <h3 className="text-lg font-bold mb-2 text-brand-900">Finfish farms</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">Salmon, tilapia, catfish, and other finfish operations running net pens, cages, or ponds.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm animate-fade-in-up delay-200">
+              <Waves className="h-8 w-8 text-brand-600 mb-4" />
+              <h3 className="text-lg font-bold mb-2 text-brand-900">Shrimp &amp; crustacean farms</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">Pond-based and intensive shrimp producers screening for stress and disease across grow-out cycles.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm animate-fade-in-up delay-300">
+              <Building2 className="h-8 w-8 text-brand-600 mb-4" />
+              <h3 className="text-lg font-bold mb-2 text-brand-900">Hatcheries &amp; nurseries</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">Early-stage rearing operations where catching a problem a day sooner protects an entire cohort.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm animate-fade-in-up delay-400">
+              <Warehouse className="h-8 w-8 text-brand-600 mb-4" />
+              <h3 className="text-lg font-bold mb-2 text-brand-900">RAS &amp; land-based systems</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">Recirculating and indoor operations that need consistent monitoring across many small tanks.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -80,7 +114,7 @@ export default function Home() {
           <div className="mb-16 animate-fade-in-up">
             <span className="chip-dark mb-6">How it works</span>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight max-w-3xl mb-6 text-white">Three steps, no new hardware.</h2>
-            <p className="text-xl text-brand-100 max-w-2xl">Nothing to bolt onto your tanks and nothing to wire up before your first flag.</p>
+            <p className="text-xl text-brand-100 max-w-2xl">A cloud dashboard your whole team logs into — subscribe once, and it covers every tank, pond, or cage across every site. Nothing to bolt on and nothing to wire up before your first flag.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">

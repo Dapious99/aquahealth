@@ -8,8 +8,8 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AquaHealth | AI Photo Screening for Fish Farms (Early Access)',
-  description: 'AquaHealth turns everyday inspection photos into early disease and stress flags for fish farm and hatchery operators — no cameras or sensors to install. Now in early access.',
+  title: 'AquaHealth | B2B SaaS Health Monitoring for Aquaculture (Early Access)',
+  description: 'AquaHealth is a B2B SaaS platform that turns everyday inspection photos into early disease and stress flags for fish farms, shrimp farms, and hatcheries — no cameras or sensors to install. Now in early access.',
 };
 
 export default function RootLayout({

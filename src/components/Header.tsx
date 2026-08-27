@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-lg border-b border-slate-200 transition-all duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="group" aria-label="AquaHealth home">
+        <Link href="/" className="group flex items-center gap-3" aria-label="AquaHealth home">
           <Image
             src="/brand/aquahealth-logo-horizontal.svg"
             alt="AquaHealth"
@@ -15,9 +15,11 @@ export default function Header() {
             priority
             className="h-11 w-auto transition-transform group-hover:scale-105"
           />
+          <span className="hidden md:inline-block text-[11px] font-bold uppercase tracking-wider text-brand-600 border-l border-slate-200 pl-3">Aquaculture Health Software</span>
         </Link>
         <nav className="hidden lg:flex gap-8 items-center">
           <Link href="/" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Home</Link>
+          <Link href="/#industries" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">Industries</Link>
           <Link href="/about" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">About</Link>
           <Link href="/services" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">How it works</Link>
           <Link href="/technology" className="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors">The model</Link>

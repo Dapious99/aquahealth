@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-slate-500 leading-relaxed mb-6">
-              AI photo screening for fish farm operators. Upload an inspection photo, get an early flag &mdash; no cameras or sensors to install. Currently in early access.
+              B2B SaaS health monitoring for commercial aquaculture &mdash; fish farms, shrimp farms, and hatcheries. Upload an inspection photo, get an early flag, no cameras or sensors to install. Currently in early access.
             </p>
                  </div>
           

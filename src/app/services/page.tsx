@@ -7,9 +7,9 @@ export default function Services() {
       <section className="py-32 bg-slate-50 border-b border-slate-100">
         <div className="container mx-auto px-6 lg:px-8 text-center animate-fade-in-up">
           <span className="chip mb-6">How it works</span>
-          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">A software layer, not a hardware install.</h1>
+          <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">A subscription software layer, not a hardware install.</h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            We don't sell cameras, sensors, or edge boxes. AquaHealth reads the inspection photos your team already takes and puts findings in front of the right person.
+            We don't sell cameras, sensors, or edge boxes. AquaHealth is a B2B SaaS dashboard that reads the inspection photos your fishery already takes — across every tank, pond, or cage — and puts findings in front of the right person.
           </p>
         </div>
       </section>

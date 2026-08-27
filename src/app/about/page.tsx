@@ -6,10 +6,10 @@ export default function About() {
     <div className="overflow-hidden">
       <section className="py-32 bg-slate-50 border-b border-slate-100 relative">
         <div className="container mx-auto px-6 lg:px-8 text-center animate-fade-in-up">
-          <span className="chip mb-6">Early access &middot; MVP</span>
+          <span className="chip mb-6">B2B SaaS &middot; Early access</span>
           <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 text-brand-900">Bridging biology and vision models.</h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            AquaHealth started because visual inspection — the thing that actually catches most problems early — doesn't scale past a handful of tanks. We're building the software layer that gives it a second set of eyes.
+            AquaHealth started because visual inspection — the thing that actually catches most problems early in fish and shrimp farming — doesn't scale past a handful of sites. We're building the software layer that gives it a second set of eyes.
           </p>
         </div>
       </section>
@@ -20,13 +20,13 @@ export default function About() {
           <div className="animate-fade-in-up">
             <h2 className="text-3xl font-bold mb-4 text-brand-900">Our Vision</h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              A world where no commercial fish farm loses yield to a problem that was visible in a photo days before it became a crisis.
+              A world where no commercial fishery — finfish, shrimp, or hatchery — loses yield to a problem that was visible in a photo days before it became a crisis.
             </p>
           </div>
           <div className="animate-fade-in-up delay-100">
             <h2 className="text-3xl font-bold mb-4 text-brand-900">Our Mission</h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              To give B2B aquaculture operators an AI copilot that reads the inspection photos they already take and turns them into early, reviewable flags — no hardware to buy or install.
+              To give B2B aquaculture operators — starting in Nigeria, then across Africa — a subscription AI copilot that reads the inspection photos they already take and turns them into early, reviewable flags — no hardware to buy or install.
             </p>
           </div>
         </div>
